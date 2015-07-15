@@ -2,12 +2,8 @@
 
 1. Just #import "UIActivityIndicatorView.h"
 
-and 2. call one of the following that are now available as part of UIActivityIndicatorView's class methods
+and 2. Call
 
 <code>+(void)showForBlock:(void (^)(void))block inWindow:(UIWindow *)w;</code>
 
-or
-
-<code>+(void)showForBlock:(void (^)(void))block inWindow:(UIWindow *)w style:(UIActivityIndicatorViewStyle)style;</code>
-
-The <code>inWindow</code> parameter accepts any UIView's <code>window</code> property to show the indicator at the center of the application screen.
+The <code>inWindow</code> parameter accepts any UIView's <code>window</code> property, in order to show the indicator at the center of the application screen.
