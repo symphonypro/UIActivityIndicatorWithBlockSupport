@@ -1,8 +1,8 @@
 # UIActivityIndicatorWithBlockSupport
 
-1. Just #import "UIActivityIndicator+Block.h"
+1. Just #import "UIActivityIndicator+Block.h" and
 
-and 2. Call
+2. Call
 
 <code>+(void)showForBlock:(void (^)(void))block inWindow:(UIWindow *)w;</code> that becomes available as a UIActivityIndicatorView's class method
 
