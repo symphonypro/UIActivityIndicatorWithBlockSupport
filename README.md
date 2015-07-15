@@ -4,6 +4,8 @@
 
 2. Call
 
-<code>+(void)showForBlock:(void (^)(void))block inWindow:(UIWindow *)w;</code> that becomes available as a UIActivityIndicatorView's class method
+<code>+(void)showForBlock:(void (^)(void))block inWindow:(UIWindow *)w;</code> 
 
-The <code>inWindow</code> parameter accepts any UIView's <code>window</code> property, in order to show the indicator at the center of the application screen.
+that becomes available as a UIActivityIndicatorView class method.
+
+The <code>inWindow</code> parameter accepts any <code>window</code> property of a live UIView in your application. This parameter is required in order to show the indicator at the center of the application screen and at the top of the view hierarchy.
