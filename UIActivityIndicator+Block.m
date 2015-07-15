@@ -51,8 +51,8 @@ UIActivityIndicatorView* sharedActivityIndicatorInstance = nil;
 }
 
 -(void)_dismiss{
-    [sharedActivityIndicatorInstance stopAnimating];
-    [sharedActivityIndicatorInstance removeFromSuperview];
+    [self stopAnimating];
+    [self removeFromSuperview];
 }
 
 @end
