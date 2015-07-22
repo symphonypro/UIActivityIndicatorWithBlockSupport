@@ -45,7 +45,11 @@ UIActivityIndicatorView* sharedActivityIndicatorInstance = nil;
 
 -(void)didMoveToSuperview{
     dispatch_async(dispatch_get_main_queue(), ^{
-        _block();
+        //-didMoveToSuperview can be called externally more than once, so set to nil after first call to ensure 1-time execution of _block parameter
+        if(_block != nil){
+            _block();
+            _block = nil;
+        }
         [self _dismiss];
     });
 }
